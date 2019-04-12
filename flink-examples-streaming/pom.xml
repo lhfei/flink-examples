@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>cn.lhfei.flink</groupId>
 		<artifactId>flink-examples</artifactId>
-		<version>1.7.2</version>
+		<version>1.8.0</version>
 	</parent>
 	<artifactId>flink-examples-streaming</artifactId>
 	<name>flink-examples-streaming</name>

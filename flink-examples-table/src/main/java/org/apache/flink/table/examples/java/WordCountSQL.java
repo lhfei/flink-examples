@@ -41,7 +41,7 @@ public class WordCountSQL {
 
 		// set up execution environment
 		ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
-		BatchTableEnvironment tEnv = BatchTableEnvironment.getTableEnvironment(env);
+		BatchTableEnvironment tEnv = BatchTableEnvironment.create(env);
 
 		DataSet<WC> input = env.fromElements(
 			new WC("Hello", 1),

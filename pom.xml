@@ -6,7 +6,7 @@
 
 	<groupId>cn.lhfei.flink</groupId>
 	<artifactId>flink-examples</artifactId>
-	<version>1.7.2</version>
+	<version>1.8.0</version>
 	<packaging>pom</packaging>
 
 	<name>flink-examples</name>
@@ -15,8 +15,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<flink.version>1.7.2</flink.version>
+		<flink.version>1.8.0</flink.version>
 		<scala.binary.version>2.11</scala.binary.version>
+		<sl4j.version>1.7.26</sl4j.version>
+		<log4j.version>1.2.17</log4j.version>
 	</properties>
 
 	<dependencies>
@@ -71,12 +73,12 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.26</version>
+			<version>${sl4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<version>${log4j.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -94,21 +96,6 @@
 				<groupId>net.alchim31.maven</groupId>
 				<artifactId>scala-maven-plugin</artifactId>
 				<version>4.0.1</version>
-				<!-- <executions>
-					<execution>
-						<id>scala-compile-first</id>
-						<phase>process-resources</phase>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-					<execution>
-						<goals>
-							<goal>compile</goal>
-							<goal>testCompile</goal>
-						</goals>
-					</execution>
-				</executions> -->
 				<configuration>
 					<jvmArgs>
 						<jvmArg>-Xms128m</jvmArg>

@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>cn.lhfei.flink</groupId>
 		<artifactId>flink-examples</artifactId>
-		<version>1.7.2</version>
+		<version>1.8.0</version>
 	</parent>
 	<artifactId>flink-examples-batch</artifactId>
 	<name>flink-examples-batch</name>
@@ -37,7 +37,7 @@
 
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.clustering.KMeans</program-class>
+									<program-class>org.apache.flink.examples.java.clustering.KMeans</program-class>
 								</manifestEntries>
 							</archive>
 
@@ -62,7 +62,7 @@
 				
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.graph.TransitiveClosureNaive</program-class>
+									<program-class>org.apache.flink.examples.java.graph.TransitiveClosureNaive</program-class>
 								</manifestEntries>
 							</archive>
 				
@@ -86,7 +86,7 @@
 
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.graph.ConnectedComponents</program-class>
+									<program-class>org.apache.flink.examples.java.graph.ConnectedComponents</program-class>
 								</manifestEntries>
 							</archive>
 
@@ -110,7 +110,7 @@
 
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.graph.EnumTriangles</program-class>
+									<program-class>org.apache.flink.examples.java.graph.EnumTriangles</program-class>
 								</manifestEntries>
 							</archive>
 
@@ -136,7 +136,7 @@
 
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.graph.PageRank</program-class>
+									<program-class>org.apache.flink.examples.java.graph.PageRank</program-class>
 								</manifestEntries>
 							</archive>
 
@@ -160,7 +160,7 @@
 
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.relational.WebLogAnalysis</program-class>
+									<program-class>org.apache.flink.examples.java.relational.WebLogAnalysis</program-class>
 								</manifestEntries>
 							</archive>
 
@@ -185,7 +185,7 @@
 
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.wordcount.WordCount</program-class>
+									<program-class>org.apache.flink.examples.java.wordcount.WordCount</program-class>
 								</manifestEntries>
 							</archive>
 
@@ -209,7 +209,7 @@
 
 							<archive>
 								<manifestEntries>
-									<program-class>cn.lhfei.flink.batch.java.distcp.DistCp</program-class>
+									<program-class>org.apache.flink.examples.java.distcp.DistCp</program-class>
 								</manifestEntries>
 							</archive>
 
