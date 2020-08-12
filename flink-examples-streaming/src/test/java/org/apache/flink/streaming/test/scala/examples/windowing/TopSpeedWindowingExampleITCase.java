@@ -17,9 +17,10 @@
 
 package org.apache.flink.streaming.test.scala.examples.windowing;
 
-import org.apache.flink.streaming.examples.windowing.TopSpeedWindowing;
 import org.apache.flink.streaming.examples.windowing.util.TopSpeedWindowingExampleData;
+import org.apache.flink.streaming.scala.examples.windowing.TopSpeedWindowing;
 import org.apache.flink.test.util.AbstractTestBase;
+
 import org.junit.Test;
 
 /**

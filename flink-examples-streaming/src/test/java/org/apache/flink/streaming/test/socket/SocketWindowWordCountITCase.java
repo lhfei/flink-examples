@@ -17,7 +17,12 @@
 
 package org.apache.flink.streaming.test.socket;
 
-import static org.junit.Assert.fail;
+import org.apache.flink.configuration.ConfigConstants;
+import org.apache.flink.streaming.examples.socket.SocketWindowWordCount;
+import org.apache.flink.test.testdata.WordCountData;
+import org.apache.flink.test.util.AbstractTestBase;
+
+import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -28,11 +33,7 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import org.apache.flink.configuration.ConfigConstants;
-import org.apache.flink.streaming.examples.socket.SocketWindowWordCount;
-import org.apache.flink.test.testdata.WordCountData;
-import org.apache.flink.test.util.AbstractTestBase;
-import org.junit.Test;
+import static org.junit.Assert.fail;
 
 /**
  * Tests for {@link SocketWindowWordCount}.
@@ -99,7 +100,7 @@ public class SocketWindowWordCountITCase extends AbstractTestBase {
 
 				final int serverPort = server.getLocalPort();
 
-				SocketWindowWordCount.main(
+				org.apache.flink.streaming.scala.examples.socket.SocketWindowWordCount.main(
 						new String[] { "--port", String.valueOf(serverPort) });
 
 				if (errorMessages.size() != 0) {

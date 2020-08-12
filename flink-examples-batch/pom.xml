@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>cn.lhfei.flink</groupId>
 		<artifactId>flink-examples</artifactId>
-		<version>1.8.0</version>
+		<version>1.11.1</version>
 	</parent>
 	<artifactId>flink-examples-batch</artifactId>
 	<name>flink-examples-batch</name>
@@ -15,8 +15,27 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
 	<dependencies>
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-java</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-scala_${scala.binary.version}</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-clients_${scala.binary.version}</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
 	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
