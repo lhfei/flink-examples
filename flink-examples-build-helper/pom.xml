@@ -24,7 +24,7 @@ under the License.
 	<parent>
 		<groupId>cn.lhfei.flink</groupId>
 		<artifactId>flink-examples</artifactId>
-		<version>1.11.1</version>
+		<version>1.12.3</version>
 	</parent>
 
 	<artifactId>flink-examples-build-helper</artifactId>
