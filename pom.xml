@@ -4,7 +4,7 @@
 
 	<groupId>cn.lhfei.flink</groupId>
 	<artifactId>flink-examples</artifactId>
-	<version>1.12.3</version>
+	<version>1.13.2</version>
 	<packaging>pom</packaging>
 
 	<name>flink-examples</name>
@@ -13,9 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<flink.version>1.12.3</flink.version>
-		<scala.binary.version>2.11</scala.binary.version>
-		<sl4j.version>1.7.26</sl4j.version>
+		<flink.version>1.13.2</flink.version>
+		<scala.binary.version>2.12</scala.binary.version>
+		<sl4j.version>1.7.32</sl4j.version>
 		<log4j.version>1.2.17</log4j.version>
 	</properties>
 
@@ -23,7 +23,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
 
